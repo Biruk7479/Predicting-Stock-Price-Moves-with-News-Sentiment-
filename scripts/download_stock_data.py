@@ -143,8 +143,8 @@ def main():
     """Main function to download stock data"""
     
     # Configuration
-    NEWS_DATA_PATH = "../Data/newsData/raw_analyst_ratings.csv"
-    OUTPUT_DIR = Path("../Data/stockData")
+    NEWS_DATA_PATH = "Data/newsData/raw_analyst_ratings.csv"
+    OUTPUT_DIR = Path("Data/stockData")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     
     # Date range (adjust based on your news data)
