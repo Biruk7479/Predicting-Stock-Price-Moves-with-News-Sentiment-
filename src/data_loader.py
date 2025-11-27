@@ -75,7 +75,7 @@ class DataLoader:
         
         # Convert date to datetime if not already
         if not pd.api.types.is_datetime64_any_dtype(df['date']):
-            df['date'] = pd.to_datetime(df['date'])
+            df['date'] = pd.to_datetime(df['date'], format='mixed', utc=True)
         
         # Extract date components
         df['year'] = df['date'].dt.year
